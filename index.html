@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Group</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer type="module"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body >
+    <nav>
+        <div class="nav-content">
+            <img src="./Images/logo-top.png" class="logo">
+            <div class="links">
+            <a href="index.html">Group Generator</a>
+            <a href="about.html">About</a>
+        </div>
+        </div>
+      
+    </nav>
+    <main>
+        <div class="header">
+            <h1>AUTOGROUP</h1>
+            <p>Automatically create groups from your class list</p>
+        </div>
+            <form id="form">
+            <div class="textarea">
+                <label for="list">Paste class list</label>
+                <textarea name="list" required id="list" placeholder="Enter the list to be grouped. Please put each item on a new line"></textarea>
+            </div>
+            <div class="input-btn">
+                <div>
+                    <label for="group-size">Set Group size</label>
+                    <input type="number" id="group-size" required min="2" value="2" placeholder="2">
+                </div>
+                <div>
+                    <label for="checkbox">Shuffle</label>
+                    <input type="checkbox" id="checkbox" value=""> 
+                </div> 
+                    <button type="submit" id="submit">Generate</button>
+                    <button class="copy-btn">Copy Groups</button>
+                    <button class="reset-btn" onclick="clear()">Reset</button>
+            </div>
+        </form>
+        <div class="footer">
+            <img src="./Images/bottom logo.png" >
+        </div>
+        <section class="list-section">
+            <ol id="ol">
+
+            </ol>
+        </section>
+        
+        
+    </main>
+  
+</body>
+</html>

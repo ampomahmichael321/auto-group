@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "width" 100;
+    
+}
+
+body{
+    overflow-x: hidden;
+    
+}
+
+nav{
+    border-top: solid rgb(216, 214, 214)  0.1px;
+    border-bottom: solid rgb(216, 214, 214) 0.1px;
+    margin-top: 0.5em;
+}
+
+.nav-content{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 4em;
+  
+}
+
+.logo{
+    width: 5.2em;
+    height: auto;
+    
+}
+
+.links{
+    display: none;
+}
+
+.links a{
+    margin-right: 8em;
+    color: rgb(10,32,77);
+}
+
+.links a:hover{
+    color: rgb(153, 40, 40);
+}
+
+main{
+    margin-top: -1.5em;
+}
+
+textarea{
+    display: block;
+    min-width: 22em;
+    padding:1em;
+    min-height: 20em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    border: solid rgb(216, 214, 214)  0.1px;
+    outline: none;
+    border-radius: 10px;
+
+}
+
+.header{
+    width: 75%;
+    margin: 2em auto;
+    margin-bottom: 1em;
+    animation: slide-in 1s ease-in-out;
+}
+
+.header h1{
+    color: rgb(10,32,77);
+    font-weight: 600;
+}
+
+form{
+    margin: auto;
+    animation: slide-up 1s ease-in-out;
+}
+
+
+input,button{
+    cursor: pointer;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.group{
+    flex: 0 0 12em;/*This means that the flex can grow to take available space, shrink if needed and start at 200px*/
+    
+}
+
+#group-size, button{
+    display: block;
+    width: 22em;
+    padding: 0.7em;
+    margin: 1em 0 1em 0;
+}
+
+#group-size{
+     border: solid rgb(216, 214, 214)  0.1px;
+     outline: none;
+}
+
+.list-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+    padding: 1em;
+}
+
+button{
+    transition: transform 0.2s ease-in-out;
+}
+
+#submit{
+    border: none;
+    background-color:rgb(10,32,77);
+    color: white;
+}
+
+.copy-btn{
+    background-color: white;
+    color: rgb(10,32,77);
+    border: solid 0.5px  rgb(10,32,77);
+    display: none;
+}
+
+
+.reset-btn{
+    background-color: rgb(153, 40, 40);
+    border:none;
+    color: white;
+}
+
+button:hover{
+    transform: translateY(-0.2em);
+}
+
+#ol{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin-top: -5em;
+    background-color: white;
+    color: black;
+}
+
+.footer{
+   width: 60%;
+   margin: auto;
+   display: flex;
+   justify-content: center;
+   margin-top: -3em;
+   margin-bottom: 0;
+   animation: slide-up 1s ease-in-out;
+}
+
+.footer img{
+    width: 12em;
+}
+
+/*Animations*/
+@keyframes slide-in {
+    0%{
+        transform: translateX(-15em);
+    }
+    100%{
+        transform: translateX(0);
+    }
+    
+}
+
+@keyframes slide-up {
+     0%{
+        transform: translateY(15em);
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
+}
+
+@media(min-width:800px){
+    form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2em;
+    align-items: center;
+    margin: auto;
+    width: 40%;
+    animation: slide-up 1s ease-in-out;
+}
+.header{
+    width: 40%;
+    font-size: x-large;
+}
+.links{
+    margin-right: 2em;
+    display: flex;
+}
+
+}
