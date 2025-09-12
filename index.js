@@ -130,6 +130,7 @@ copyBtn.addEventListener("click", (e) => {
 //Use the html2pdf library to convert the HTML to PDF
 downloadBtn.addEventListener("click", (e) => {
   e.preventDefault();
+  element.style.display = "block";
   const element = document.getElementById("ol");
   html2pdf()
     .set({
@@ -141,4 +142,5 @@ downloadBtn.addEventListener("click", (e) => {
     })
     .from(element)
     .save();
+  element.style.display = "flex";
 });
