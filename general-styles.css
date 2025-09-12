@@ -72,9 +72,13 @@ main {
 
 .close-button {
   align-self: flex-end;
-  color: rgb(10, 32, 77);
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1em;
+}
+
+.close-button img {
+  width: 1.5em;
+  height: auto;
 }
 
 @media (min-width: 800px) {
