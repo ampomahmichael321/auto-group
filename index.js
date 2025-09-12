@@ -27,10 +27,6 @@ function toggleMenu() {
 }
 
 function getValues() {
-  if (textArea.value.trim() === "") {
-    alert("Please enter some items to group.");
-    return;
-  }
   itemsStr = textArea.value.trim();
   groupSize = groupSizeInput.value;
   //Check if the checkbox is checked
@@ -107,6 +103,10 @@ function copyGroups() {
 }
 
 submitBtn.addEventListener("click", (e) => {
+  if (textArea.value.trim() === "") {
+    alert("Please enter some items to group.");
+    return;
+  }
   e.preventDefault();
   getValues();
   toArr(itemsStr);
