@@ -11,7 +11,7 @@ const groupSizeInput = document.getElementById("group-size");
 let groupSize = "";
 let html = "";
 let shuffledArr = [];
-const copyBtn = document.querySelector(".copy-btn");
+const copyBtn = document.querySelector(".copy-button");
 
 //Event listeners for the menu button and close button
 menuBtn.addEventListener("click", toggleMenu);
