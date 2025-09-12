@@ -62,7 +62,8 @@ main {
   flex-direction: column;
   gap: 1em;
   background-color: rgba(0, 0, 0, 0.6);
-  padding: 1em 2em;
+  padding: 2em 3em;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 @media (min-width: 800px) {
