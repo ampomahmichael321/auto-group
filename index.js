@@ -130,8 +130,8 @@ copyBtn.addEventListener("click", (e) => {
 //Use the html2pdf library to convert the HTML to PDF
 downloadBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  element.style.display = "block";
   const element = document.getElementById("ol");
+  element.style.display = "block";
   html2pdf()
     .set({
       margin: 1,
