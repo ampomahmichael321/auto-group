@@ -6,3 +6,8 @@ main {
   flex-direction: column;
   align-content: center;
 }
+h1,
+h2 {
+  margin-bottom: 0.5em;
+  color: rgb(10, 32, 77);
+}
