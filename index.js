@@ -3,6 +3,8 @@ const menuBtn = document.querySelector(".menu");
 const textArea = document.getElementById("list");
 const checkbox = document.getElementById("checkbox");
 const submitBtn = document.getElementById("submit");
+const copyBtn = document.querySelector(".copy-btn");
+const downloadBtn = document.querySelector(".download-btn");
 let itemsArr = [];
 let itemsStr = "";
 let shuffleOption = "";
@@ -11,7 +13,6 @@ const groupSizeInput = document.getElementById("group-size");
 let groupSize = "";
 let html = "";
 let shuffledArr = [];
-const copyBtn = document.querySelector(".copy-btn");
 
 //Event listeners for the menu button and close button
 menuBtn.addEventListener("click", toggleMenu);
@@ -81,11 +82,11 @@ function clear() {
   ol.innerHTML = "";
 }
 
-function displayCopyBtn() {
+function displayBtn(btnName) {
   if (ol.innerText != "") {
-    copyBtn.style.display = "block";
+    btnName.style.display = "block";
   } else {
-    copyBtn.style.display = "none";
+    btnName.style.display = "none";
   }
 }
 //Add Event listener to the download button to download the groups as a PDF file
@@ -111,7 +112,9 @@ submitBtn.addEventListener("click", (e) => {
   getValues();
   toArr(itemsStr);
   createGroups(itemsArr);
-  displayCopyBtn();
+  displayBtn(copyBtn);
+  displayBtn(downloadBtn);
+
   ol.scrollIntoView({
     behaviour: "smooth",
   });
