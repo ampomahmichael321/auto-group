@@ -90,6 +90,10 @@ main {
   .menu {
     display: none;
   }
+  .logo {
+    width: 6em;
+    height: auto;
+  }
 }
 @media (max-width: 800px) {
   .nav-content {
@@ -97,9 +101,7 @@ main {
     padding-left: 1em;
     gap: 4em;
   }
-  .logo {
-    width: 5em;
-  }
+
   .menu img {
     width: 2em;
     height: auto;
