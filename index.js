@@ -1,4 +1,4 @@
-const closeBtn = document.querySelector(".close-btn");
+const closeBtn = document.querySelector(".close-button");
 const menuBtn = document.querySelector(".menu");
 const textArea = document.getElementById("list");
 const checkbox = document.getElementById("checkbox");
@@ -11,7 +11,7 @@ const groupSizeInput = document.getElementById("group-size");
 let groupSize = "";
 let html = "";
 let shuffledArr = [];
-const copyBtn = document.querySelector(".copy-button");
+const copyBtn = document.querySelector(".copy-btn");
 
 //Event listeners for the menu button and close button
 menuBtn.addEventListener("click", toggleMenu);
