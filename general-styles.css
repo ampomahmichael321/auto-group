@@ -48,10 +48,6 @@ nav {
   color: rgb(153, 40, 40);
 }
 
-main {
-  margin-top: -1.5em;
-}
-
 @media (min-width: 800px) {
   .links {
     margin-right: 2em;
