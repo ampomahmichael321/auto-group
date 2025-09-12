@@ -52,6 +52,18 @@ main {
   margin-top: -1.5em;
 }
 
+.hidden-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
 @media (min-width: 800px) {
   .links {
     margin-right: 2em;
