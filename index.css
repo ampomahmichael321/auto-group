@@ -87,7 +87,7 @@ button {
 }
 
 .download-btn {
-  background-color: green
+  background-color: green;
   border: none;
   color: white;
   display: none;
