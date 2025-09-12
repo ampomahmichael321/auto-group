@@ -60,7 +60,7 @@ main {
   left: 2em;
   display: none;
   flex-direction: column;
-  gap: 1em;
+  gap: 2em;
   background-color: rgba(0, 0, 0, 0.8);
   padding: 2em 3em;
 }
