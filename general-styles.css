@@ -63,7 +63,18 @@ main {
   gap: 1em;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 2em 3em;
+}
+
+.hidden-menu a {
+  font-size: 1.5em;
   color: rgba(255, 255, 255, 0.8);
+}
+
+.close-button {
+  align-self: flex-end;
+  color: rgb(10, 32, 77);
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 @media (min-width: 800px) {
