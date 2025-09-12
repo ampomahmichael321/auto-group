@@ -1,0 +1,6 @@
+main {
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
