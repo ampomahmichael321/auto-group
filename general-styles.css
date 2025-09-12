@@ -61,3 +61,17 @@ main {
     display: none;
   }
 }
+@media (max-width: 800px) {
+  .nav-content {
+    width: 90%;
+    padding-left: 1em;
+    gap: 4em;
+  }
+  .logo {
+    width: 4em;
+  }
+  .menu img {
+    width: 2.5em;
+    height: auto;
+  }
+}
