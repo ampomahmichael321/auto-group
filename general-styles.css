@@ -57,13 +57,14 @@ main {
   top: 0;
   bottom: 0;
   right: 0;
+  left: 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
-  background-color: rgba(0, 0, 0, 0.038);
+  background-color: rgba(0, 0, 0, 0.28);
 }
 
 @media (min-width: 800px) {
