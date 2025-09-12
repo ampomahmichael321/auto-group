@@ -68,10 +68,10 @@ main {
     gap: 4em;
   }
   .logo {
-    width: 3em;
+    width: 5em;
   }
   .menu img {
-    width: 2.5em;
+    width: 2em;
     height: auto;
   }
 }
