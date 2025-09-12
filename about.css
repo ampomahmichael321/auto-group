@@ -11,3 +11,8 @@ h2 {
   margin-bottom: 0.5em;
   color: rgb(10, 32, 77);
 }
+
+ul,
+p {
+  margin-bottom: 1em;
+}
