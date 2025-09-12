@@ -13,6 +13,19 @@ let html = "";
 let shuffledArr = [];
 const copyBtn = document.querySelector(".copy-btn");
 
+//Event listeners for the menu button and close button
+menuBtn.addEventListener("click", toggleMenu);
+closeBtn.addEventListener("click", toggleMenu);
+
+//Hide and show the menu when the menu button is clicked
+function toggleMenu() {
+  if (document.querySelector(".hidden-menu").style.display === "flex") {
+    document.querySelector(".hidden-menu").style.display = "none";
+  } else {
+    document.querySelector(".hidden-menu").style.display = "flex";
+  }
+}
+
 function getValues() {
   itemsStr = textArea.value.trim();
   groupSize = groupSizeInput.value;
