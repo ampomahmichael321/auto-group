@@ -129,6 +129,7 @@ copyBtn.addEventListener("click", (e) => {
 
 //Use the html2pdf library to convert the HTML to PDF
 downloadBtn.addEventListener("click", (e) => {
+  /*Change the styling to block then after rendering the pdf, change back to the style*/
   e.preventDefault();
   const element = document.getElementById("ol");
   element.style.display = "block";
@@ -141,6 +142,8 @@ downloadBtn.addEventListener("click", (e) => {
       jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
     })
     .from(element)
-    .save();
-  element.style.display = "flex";
+    .save()
+    .then(() => {
+      element.style.display = "flex";
+    });
 });
