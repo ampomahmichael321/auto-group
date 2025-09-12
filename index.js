@@ -126,24 +126,3 @@ copyBtn.addEventListener("click", (e) => {
 });
 
 //Allow users to copy the groups and also download it as pdf file if they want
-
-//Use the html2pdf library to convert the HTML to PDF
-downloadBtn.addEventListener("click", (e) => {
-  /*Change the styling to block then after rendering the pdf, change back to the style*/
-  e.preventDefault();
-  const element = document.getElementById("ol");
-  element.style.display = "block";
-  html2pdf()
-    .set({
-      margin: 1,
-      filename: "groups.pdf",
-      image: { type: "jpeg", quality: 0.98 },
-      html2canvas: { scale: 1 },
-      jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
-    })
-    .from(element)
-    .save()
-    .then(() => {
-      element.style.display = "flex";
-    });
-});

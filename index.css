@@ -86,13 +86,6 @@ button {
   color: white;
 }
 
-.download-btn {
-  background-color: rgb(10, 32, 77);
-  border: none;
-  color: white;
-  display: none;
-}
-
 button:hover {
   transform: translateY(-0.2em);
 }
