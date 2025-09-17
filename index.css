@@ -73,7 +73,8 @@ button {
   color: white;
 }
 
-.copy-btn {
+.copy-btn,
+.download-btn {
   background-color: white;
   color: rgb(10, 32, 77);
   border: solid 0.5px rgb(10, 32, 77);
