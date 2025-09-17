@@ -124,25 +124,3 @@ copyBtn.addEventListener("click", (e) => {
   e.preventDefault();
   copyGroups();
 });
-
-//Allow users to copy the groups and also download it as pdf file if they want
-downloadBtn.addEventListener("click", (e) => {
-  let section = document.getElementById("#ol").innerHTML;
-
-  // open a new blank page
-  let newWin = window.open("http://fistbumpme.vercel.app", "_blank");
-  newWin.document.write(`
-      <html>
-        <head>
-          <title>Rendered Section</title>
-          <style>
-            body { font-family: Arial, sans-serif; padding: 20px; }
-          </style>
-        </head>
-        <body>
-          ${section}
-        </body>
-      </html>
-    `);
-  newWin.document.close();
-});
