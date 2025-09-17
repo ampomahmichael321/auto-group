@@ -131,7 +131,7 @@ downloadBtn.addEventListener("click", (e) => {
   let section = document.getElementById("#ol").innerHTML;
 
   // open a new blank page
-  let newWin = window.open("", "_blank");
+  let newWin = window.open("http://fistbumpme.vercel.app", "_blank");
   newWin.document.write(`
       <html>
         <head>
