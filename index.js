@@ -126,3 +126,23 @@ copyBtn.addEventListener("click", (e) => {
 });
 
 //Allow users to copy the groups and also download it as pdf file if they want
+document.getElementById("open-btn").addEventListener("click", () => {
+  let section = document.getElementById("#ol").innerHTML;
+
+  // open a new blank page
+  let newWin = window.open("", "_blank");
+  newWin.document.write(`
+      <html>
+        <head>
+          <title>Rendered Section</title>
+          <style>
+            body { font-family: Arial, sans-serif; padding: 20px; }
+          </style>
+        </head>
+        <body>
+          ${section}
+        </body>
+      </html>
+    `);
+  newWin.document.close();
+});
