@@ -127,7 +127,6 @@ copyBtn.addEventListener("click", (e) => {
 
 //Allow users to copy the groups and also download it as pdf file if they want
 downloadBtn.addEventListener("click", (e) => {
-  e.preventDefault();
   let section = document.getElementById("#ol").innerHTML;
 
   // open a new blank page
