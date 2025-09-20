@@ -4,7 +4,7 @@ const textArea = document.getElementById("list");
 const checkbox = document.getElementById("checkbox");
 const submitBtn = document.getElementById("submit");
 const copyBtn = document.querySelector(".copy-btn");
-const downloadBtn = document.querySelector(".download-btn");
+
 let itemsArr = [];
 let itemsStr = "";
 let shuffleOption = "";
@@ -113,7 +113,6 @@ submitBtn.addEventListener("click", (e) => {
   toArr(itemsStr);
   createGroups(itemsArr);
   displayBtn(copyBtn);
-  displayBtn(downloadBtn);
 
   ol.scrollIntoView({
     behaviour: "smooth",
@@ -124,3 +123,4 @@ copyBtn.addEventListener("click", (e) => {
   e.preventDefault();
   copyGroups();
 });
+
